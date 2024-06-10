@@ -1,2 +1,4 @@
 # gaia_starclusters
-Good enough cluster membership selection to recover CMDs for use in the classroom!
+*Good enough* automatic cluster membership selection to recover CMDs for use in the classroom!
+
+This code is designed to auto-generate CMDs from Gaia data based on a simple object name search. While not a good enough selection function for *research* purposes, results are good enough for pedagogical use, including explaining SSPs (or CSPs as the case may be), fitting isochrones, and recovering age/distance/metallicity for open and globular clusters.
