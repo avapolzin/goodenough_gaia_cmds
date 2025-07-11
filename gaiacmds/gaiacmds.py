@@ -56,8 +56,9 @@ def select(obj, aper):
 	cs = Gaia.cone_search_async(objloc(obj), radius=u.Quantity(aper, u.arcmin))
 	tab = cs.get_results()
 	# keep only values that have photometry
-	tab = tab.loc[np.isfinite(tab['phot_bp_mean_mag']) & np.isfinite(tab['phot_rp_mean_mag']) & np.isfinite(tab['phot_g_mean_mag']) ]
+	tab = tab[np.isfinite(tab['phot_bp_mean_mag']) & np.isfinite(tab['phot_rp_mean_mag']) & np.isfinite(tab['phot_g_mean_mag']) ]
 
+	return tab
 
 
 def isochrone(logage, feh, dist = 10., blue = 'bp', red = 'rp', mag = 'rp', isos = 'mist'):

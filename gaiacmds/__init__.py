@@ -1,1 +1,1 @@
-from gaiacmds import objloc, select, isochrone, plot
+from .gaiacmds import objloc, select, isochrone, plot
