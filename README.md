@@ -30,12 +30,14 @@ import gaiacmds
 # adopting age and distance from Chen+23: https://ui.adsabs.harvard.edu/abs/2023ApJ...948...59C/abstract
 gaiacmds.plot('NGC 3532', 5, isos = 'mist', logage = 8.5, feh = 0.25, dist = 484)
 ```
+<img width="789" height="773" alt="NGC3532" src="https://github.com/user-attachments/assets/c4be5543-ffc7-4d57-83ee-80d2d5e59ed2" />
 
 
 ```python
 # adopting isochrone properties and membership cut from Griggio+23: https://ui.adsabs.harvard.edu/abs/2023MNRAS.523.5148G/abstract
 gaiacmds.plot('M38', 5, isos = 'mist', logage = 8.5, feh = 0.06, dist = 1130, pmra = 1.5, pmd = -4.5)
 ```
+<img width="783" height="773" alt="M38" src="https://github.com/user-attachments/assets/56b54db0-eff5-40c5-9bd0-014d56a401d5" />
 
 
 `gaiacmds` ships with easy plotting of MIST and PARSEC stellar isochrones for Gaia EDR3. BaSTI may be added in the future.
