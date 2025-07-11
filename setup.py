@@ -5,7 +5,7 @@ setuptools.setup(
 	version = "0.5",
 	author = "Ava Polzin",
 	author_email = "apolzin@uchicago.edu",
-	description = "Good enough CMDs based on automatic star cluster selection.",
+	description = "Good enough CMDs based on simple star cluster member selection.",
 	packages = ["gaiacmds"],
 	url = "https://github.com/avapolzin/goodenough_gaia_cmds",
 	license = "MIT",
