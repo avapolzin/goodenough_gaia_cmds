@@ -21,16 +21,29 @@ pip install gaiacmds
 ```
 
 ## Getting Started
+
+This lightweight code is designed to auto-generate CMDs from Gaia data based on a simple object name search. While not using a sophisiticated selection function suited to *research* purposes, results are good enough for pedagogical use, including explaining SSPs (or CSPs as the case may be), "fitting" isochrones, and recovering age/distance/metallicity for open and globular clusters.
+
+```python
 import gaiacmds
 
-This code is designed to auto-generate CMDs from Gaia data based on a simple object name search. While not using a sophisiticated selection function suited to *research* purposes, results are good enough for pedagogical use, including explaining SSPs (or CSPs as the case may be), fitting isochrones, and recovering age/distance/metallicity for open and globular clusters.
+# adopting age and distance from Chen+23: https://ui.adsabs.harvard.edu/abs/2023ApJ...948...59C/abstract
+gaiacmds.plot('NGC 3532', 5, isos = 'mist', logage = 8.5, feh = 0.25, dist = 484)
+```
 
-`gaiacmds` ships with easy plotting functions for MIST and PARSEC stellar isochrones for Gaia EDR3. BaSTI may be added in the future.
+
+```python
+# adopting isochrone properties and membership cut from Griggio+23: https://ui.adsabs.harvard.edu/abs/2023MNRAS.523.5148G/abstract
+gaiacmds.plot('M38', 5, isos = 'mist', logage = 8.5, feh = 0.06, dist = 1130, pmra = 1.5, pmd = -4.5)
+```
+
+
+`gaiacmds` ships with easy plotting of MIST and PARSEC stellar isochrones for Gaia EDR3. BaSTI may be added in the future.
 
 Stellar isochrone models will not always perfectly align with CMD, and, for example, [this paper](https://arxiv.org/abs/2411.12987) may be of interest in understanding discrepancies between the CMD and theoretical isochrone positions. Additionally, for consistency between models, all of the synthetic *Gaia* photometry is for EDR3, and all models use solar abundance patterns.
 
+## Documentation (of a sort)
 
-autodist for parallax distance
-is feh also in Gaia?
+Since the options are so minimal/simple, please refer to the docstring for `gaiacmds.plot()` to understand what options exist. The other functions may be used in isolation, too, though only `gaiacmds.plot()` is intended to be user-facing.
 
-Will create two types of functions -- one quickplot (show CMD, opt into isochrones), one that acts as plotting function to be placed in fig = plt.figure object.
+In the future, I may add options to make proper motion or other plots to help guide user choices, though this is the intent of the colormaps and spatial plot that are available at the moment. I may also add the ability to correct for reddening, though that would similarly further complicate what is intended to be a simple pedagogical tool.
