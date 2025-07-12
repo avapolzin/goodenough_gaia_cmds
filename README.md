@@ -1,5 +1,5 @@
 # `gaiacmds` [![DOI](https://zenodo.org/badge/812819707.svg)](https://doi.org/10.5281/zenodo.15866953)
-*Good enough* automatic cluster membership selection to recover CMDs for use in the classroom!
+*Good enough* simple membership selection to recover color-magnitude diagrams for use in the classroom!
 
 
 ## Installation
@@ -22,7 +22,7 @@ pip install gaiacmds
 
 ## Getting Started
 
-This lightweight code is designed to auto-generate CMDs from Gaia data based on a simple object name search. While not using a sophisiticated selection function suited to *research* purposes, results are good enough for pedagogical use, including explaining SSPs (or CSPs as the case may be), "fitting" isochrones, and recovering age/distance/metallicity for open and globular clusters.
+This lightweight code is designed to auto-generate CMDs from Gaia data based on a simple object name search. While not using a sophisiticated selection function suited to *research* purposes, results are good enough for pedagogical use, including explaining SSPs (or CSPs as the case may be), "fitting" isochrones, and recovering age/distance/metallicity for nearby stellar populations.
 
 ```python
 import gaiacmds
