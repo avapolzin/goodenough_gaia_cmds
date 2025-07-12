@@ -1,4 +1,4 @@
-# `gaiacmds`
+# `gaiacmds` [![DOI](https://zenodo.org/badge/812819707.svg)](https://doi.org/10.5281/zenodo.15866953)
 *Good enough* automatic cluster membership selection to recover CMDs for use in the classroom!
 
 
@@ -49,3 +49,7 @@ Stellar isochrone models will not always perfectly align with CMD, and, for exam
 Since the options are so minimal/simple, please refer to the docstring for `gaiacmds.plot()` to understand what options exist. The other functions may be used in isolation, too, though only `gaiacmds.plot()` is intended to be user-facing.
 
 In the future, I may add options to make proper motion or other plots to help guide user choices, though this is the intent of the colormaps and spatial plot that are available at the moment. I may also add the ability to correct for reddening, though that would similarly further complicate what is intended to be a simple pedagogical tool.
+
+## Citation
+
+If you use this package or the scripts in this repository in a publication, please add a footnote linking to https://github.com/avapolzin/goodenough_gaia_cmds and/or consider adding this software to your acknowledgments. If you would like to cite `gaiacmds`, please use the Zenodo DOI linked here.
