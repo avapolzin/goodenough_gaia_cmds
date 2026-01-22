@@ -22,7 +22,7 @@ pip install gaiacmds
 
 ## Getting Started
 
-This lightweight code is designed to auto-generate CMDs from Gaia data based on a simple object name search. While not using a sophisiticated selection function suited to *research* purposes, results are good enough for pedagogical use, including explaining SSPs (or CSPs as the case may be), "fitting" isochrones, and recovering age/distance/metallicity for nearby stellar populations.
+This lightweight code is designed to auto-generate CMDs from Gaia data based on a simple object name search. While not using a sophisticated selection function suited to *research* purposes, results are good enough for pedagogical use, including explaining SSPs (or CSPs as the case may be), "fitting" isochrones, and recovering age/distance/metallicity for nearby stellar populations.
 
 ```python
 import gaiacmds
@@ -42,7 +42,9 @@ gaiacmds.plot('M38', 5, isos = 'mist', logage = 8.5, feh = 0.06, dist = 1130, pm
 
 `gaiacmds` ships with easy plotting of MIST and PARSEC stellar isochrones for Gaia EDR3. BaSTI may be added in the future.
 
-Stellar isochrone models will not always perfectly align with CMD, and, for example, [this paper](https://arxiv.org/abs/2411.12987) may be of interest in understanding discrepancies between the CMD and theoretical isochrone positions. Additionally, for consistency between models, all of the synthetic *Gaia* photometry is for EDR3, and all models use solar abundance patterns.
+Stellar isochrone models will not always perfectly align with the CMD, and, for example, [this paper](https://arxiv.org/abs/2411.12987) may be of interest in understanding discrepancies between the CMD and theoretical isochrone positions. Additionally, for consistency between models, all of the synthetic *Gaia* photometry is for EDR3, and all models use solar abundance patterns.
+
+<!-- Could add DR2 isos from Dartmouth, too: https://rcweb.dartmouth.edu/stellar/grid.html -->
 
 ## Documentation (of a sort)
 

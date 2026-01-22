@@ -5,7 +5,7 @@ pypi_descrip = (gaiacmds_home / "README.md").read_text()
 
 setuptools.setup(
 	name = "gaiacmds",
-	version = "0.5",
+	version = "0.5.1",
 	author = "Ava Polzin",
 	author_email = "apolzin@uchicago.edu",
 	description = "Good enough CMDs based on simple star cluster member selection.",
