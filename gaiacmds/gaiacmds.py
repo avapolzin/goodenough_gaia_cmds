@@ -243,6 +243,7 @@ def plot(obj, aper, pmra = None, pmd = None, pmthresh = 0.5, isos = None, logage
 
 		ax[1].set_ylabel('Dec')
 		ax[1].set_xlabel('RA')
+		ax[1].invert_xaxis()
 
 
 
