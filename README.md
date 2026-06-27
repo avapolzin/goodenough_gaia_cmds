@@ -1,6 +1,7 @@
 <img width="1024" height="768" alt="gaiacmds_logo 013" src="https://github.com/user-attachments/assets/472f868c-0009-43d1-af1e-d28a1f930c7f" />
 
 [![DOI](https://zenodo.org/badge/812819707.svg)](https://doi.org/10.5281/zenodo.15866953)
+
 *Good enough* simple membership selection to recover color-magnitude diagrams for use in the classroom!
 
 
