@@ -173,6 +173,7 @@ def plot(obj, aper, pmra = None, pmd = None, pmthresh = 0.5, isos = None, logage
 				'distance_gspphot_upper','azero_gspphot','azero_gspphot_lower','azero_gspphot_upper',
 				'ag_gspphot','ag_gspphot_lower','ag_gspphot_upper','ebpminrp_gspphot','ebpminrp_gspphot_lower',
 				'ebpminrp_gspphot_upper','libname_gspphot','dist'
+				# https://irsa.ipac.caltech.edu/data/Gaia/dr3/gaia_dr3_source_colDescriptions.html
 		cmap (str): Colormap to use with cfield.
 		cmdcol (str): Color for data points in CMD.
 		cmdalpha (float): Opacity of points in CMD.
@@ -191,7 +192,7 @@ def plot(obj, aper, pmra = None, pmd = None, pmthresh = 0.5, isos = None, logage
 	maglabel = mag.upper()
 	dcorr = 0
 	if absmag:
-		dcorr = 1e-6/abs(dat['parallax']) #mas
+		dcorr = 1e-3/abs(dat['parallax']) #mas
 		maglabel = 'absolute %s'%mag.upper()
 		mind -= 5*np.log10(dcorr/10)
 
