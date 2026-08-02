@@ -1,4 +1,7 @@
-# `gaiacmds` [![DOI](https://zenodo.org/badge/812819707.svg)](https://doi.org/10.5281/zenodo.15866953)
+<img width="1024" height="553" alt="gaiacmds_logo 013" src="https://github.com/user-attachments/assets/353df737-ebe4-48f8-a392-e0f855d36184" />
+
+[![DOI](https://zenodo.org/badge/812819707.svg)](https://doi.org/10.5281/zenodo.15866953)
+
 *Good enough* simple membership selection to recover color-magnitude diagrams for use in the classroom!
 
 
